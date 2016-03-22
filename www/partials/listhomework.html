@@ -1,0 +1,28 @@
+
+<div class='fullpage'>
+<h2>Homework</h2>
+
+<div class='innerdiv'>
+<table>
+  <thead>
+    <tr><th>Homework</th><th>Due Date</th></tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hw in homework">
+      <td>
+        <span ng-class="homeworklist" ng-click="showHomework(hw.id);">{{hw.title}}</span>
+      </td>
+      <td>
+          <span ng-class="duedate">{{hw.duedate}}</span>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=3></td>
+    </tr>
+  </tfoor>
+</table>
+
+</div>
+</div>

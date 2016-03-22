@@ -1,0 +1,30 @@
+
+<div class='fullpage'>
+  <div class='innerdiv'>
+<form ngsubmit='createHomework()'>
+<table class='center'>
+<thead>
+  <tr>
+    <th>Title</th>
+    <th>Question</th>
+    <th>Due Date</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><input ng-model='homework.title' ></td>
+    <td><input ng-model='homework.question' ></td>
+    <td><input ng-model='homework.duedate' datepicker ></td>
+  </tr>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan=3>
+      <button ng-click='createHomework()'>Save New Homework</button>
+    </td>
+  </tr>
+</tfoot>
+</table>
+</form>
+</div>
+</div>

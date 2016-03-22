@@ -1,0 +1,30 @@
+<div class='fullpage'>
+<div ng-model='homework'>
+<h2>{{homework[0].homeworkId.title}}</h2>
+<h2>{{homework[0].homeworkId.question}}</h2>
+
+<div class='innerdiv'>
+<table>
+  <thead>
+    <tr><th>Username</th><th>Latest Answer</th></tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hw in homework">
+      <td>
+        <span ng-class="username" ng-click="showAllHomework(hw.userid.username);">{{hw.userid.username}}</span>
+      </td>
+      <td>
+          <span ng-class="answer">{{hw.answer}}</span>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=3></td>
+    </tr>
+  </tfoor>
+</table>
+</div>
+</div>
+</div>
+

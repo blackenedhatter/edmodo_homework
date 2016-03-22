@@ -1,0 +1,24 @@
+
+<div class='fullpage'>
+<table>
+  <thead>
+    <tr><th>Homework</th><th>Due Date</th></tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hw in homework" class='hwrow'>
+      <td>
+        <span ng-class="title" ng-click="submitHomework(hw.id);"> {{hw.title}}</span>
+      </td>
+      <td>
+          <span ng-class="duedate">{{hw.duedate}}</span>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=3></td>
+    </tr>
+  </tfoor>
+</table>
+Click the question in order to answer it.
+</div>

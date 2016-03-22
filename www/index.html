@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>
+</head>
+<body>
+  <div ng-controller='BodyCtrl'>
+
+  <div ng-show="isStudent()">
+    <span class='tab'><a href="#/main">Home</a></span>
+    <span class='tab'><a href="#/myhomework">Homework</a></span>
+    <span class='logout'><button ng-click='logout()'>Log Out</button></span>
+  </div>
+  <div ng-show="isTeacher()">
+    <span class='tab'><a href="#/main">Home</a></span>
+    <span class='tab'><a href="#/listhomework">Homework</a></span>
+    <span class='logout'><button ng-click='logout()'>Log Out</button></span>
+  </div>
+  <div ng-show="!isTeacher() && !isStudent()">
+    <span class='tab'><a href="#/home">Home</a></span>
+  </div>
+  <hr>
+
+  <div ng-view></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  -->
+  <script src="js/jquery-1.8.3.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/angular-cookies.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  </div>
+</body>
+</html>

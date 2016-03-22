@@ -1,0 +1,31 @@
+<div class='fullpage'>
+<h3>Register</h3>
+
+  <div ng-model='newuser'>
+    <table>
+      <thead>
+        <tr><th colspan=2></th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Username:</td>
+          <td><input ng-model='newuser.username'></td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input ng-model='newuser.name'></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input ng-model='newuser.password' type='password'></td>
+        </tr>
+        <tr>
+          <td>User Type</td>
+          <td><select ng-model='newuser.usertype'><option value='Teacher'>Teacher</option><option value='Student'>Student</option></select>
+      </tbody>
+      <tfoot>
+        <tr><td></td><td><button ng-click='register()'>Register</button></td></tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
