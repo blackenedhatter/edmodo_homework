@@ -1,0 +1,17 @@
+<div>
+  <h3 ng-model='user'>Welcome {{user.name}}!</h3>
+
+  <div ng-show="isStudent()">
+    You are a student
+  </div>
+
+  <div ng-show="isTeacher()">
+    You are a teacher
+    <UL>
+      <li><a href="#/createhomework">Create Homework</a></li>
+      <li><a href="#/assignhomework">Assign Homework</a></li>
+      <li><a href="#/listhomework">List Homework</a></li>
+    </ul>
+  </div>
+</div>
+

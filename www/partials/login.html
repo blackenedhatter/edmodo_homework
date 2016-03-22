@@ -1,0 +1,24 @@
+<div class='fullpage'>
+  <div ng-model='creds' class='loginbox'>
+    <form>
+    <table>
+      <thead>
+        <tr><th colspan=2>Login</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Username:</td>
+          <td><input ng-model='creds.username'></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type='password' ng-model='creds.password'></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td></td><td><button ng-click='login()'>Login</button></td></tr>
+      </tfoot>
+    </table>
+    </form>
+  </div>
+</div>

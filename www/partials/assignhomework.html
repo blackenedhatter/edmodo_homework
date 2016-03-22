@@ -1,0 +1,28 @@
+<div class='fullscreen'>
+<div class='innerdiv'>
+<table>
+  <thead>
+    <tr><th>Homework</th><th>Students</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign='top' align='left'>
+        <div ng-repeat="hw in homework">
+          <span ng-class="homeworkSelected(hw.id) && 'selected' || ''" ng-click="selectHomework(hw.id);">{{hw.duedate}} {{hw.title}}</span>
+        </div>
+      </td>
+      <td valign='top' align='left'>
+        <div ng-repeat="oneStudent in students">
+          <span ng-class="studentSelected(oneStudent.id) && 'selected' || ''" ng-click="selectStudent(oneStudent.id);">{{oneStudent.name}}</span>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=3><button ng-click='saveAssignments()'>Save Assignments</button></td>
+    </tr>
+  </tfoor>
+</table>
+</div>
+</div>

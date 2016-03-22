@@ -1,0 +1,14 @@
+
+<div class='fullpage'>
+<div ng-model="homework">
+  <h3>{{homework.title}}</h3>
+  <div>{{homework.question}}</div>
+
+  <div>My Answer:</div>
+  <div>
+    <textarea width='72' height='5' ng-model='homework.answer' ></textarea>
+    <span class='left'><button ng-click='submitHomework()'>Submit</button></span>
+  </div>
+
+</div>
+</div>

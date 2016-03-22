@@ -1,0 +1,32 @@
+
+<div class='fullpage'>
+
+<div ng-model='homework'>
+<h2>{{homework.title}}</h2>
+<h2>Question: {{homework.question}}</h2>
+<h2>Username: {{homework.userid.username}}</h2>
+
+<div class='innerdiv'>
+<table>
+  <thead>
+    <tr><th>Submitted Date</th><th>Answer</th></tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="hw in homework.answers">
+      <td>
+        <span ng-class="id">{{hw.sub_date}}</span>
+      </td>
+      <td>
+          <span ng-class="answer">{{hw.answer}}</span>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan=3></td>
+    </tr>
+  </tfoor>
+</table>
+</div>
+</div>
+</div>
